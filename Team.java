@@ -31,5 +31,7 @@ public class Team {
 	public String name() {
 		return name;
 	}
-
+	public void itWorked(){
+		System.out.println("This teams name is " + name);
+	}
 }
