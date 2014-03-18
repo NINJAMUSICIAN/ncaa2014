@@ -10,12 +10,15 @@ public class Bracket {
 		a = teams.next().name();
 		b = a.next();
 
-		for (String b : values) {
-			System.out.print(s + " ");
-		}
-		System.out.println();
+		double pa = a.wp();
+		double pb = b.wp();
+
+		double pai = pa - (pa * pb);
+		double pao = pa + pb - (2*pa*pb);
+		double pab = pai/pao;
+
+		return pab;
 
 	}
-	// public static int winCount(boolean winState)
 
 }
