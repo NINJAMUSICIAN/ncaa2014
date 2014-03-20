@@ -7,7 +7,7 @@ public class Bracket {
 	private Team b = new Team();
 
 	public static double probability() {
-		a = teams.next().name();
+		a = ReadNCAA.teams.next().name();
 		b = a.next();
 
 		double pa = a.wp();

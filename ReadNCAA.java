@@ -10,6 +10,7 @@ public class ReadNCAA {
 	public static ArrayList<Team> east = new ArrayList<Team>();
 	public static ArrayList<Team> west = new ArrayList<Team>();
 	public static ArrayList<Team> midWest = new ArrayList<Team>();
+	public static ArrayList<Team> teams = new ArrayList<Team>();
 
 	public static void main(String[] args)  throws FileNotFoundException {
 		Scanner reader = new Scanner(new File("ncaa2014.csv"));
