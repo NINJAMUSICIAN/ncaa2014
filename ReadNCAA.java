@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ReadNCAA {
 
-	private int teamsAdded = 0;
+	private static int teamsAdded = 0;
 
 	public static ArrayList<Team> south = new ArrayList<Team>();
 	public static ArrayList<Team> east = new ArrayList<Team>();
@@ -24,11 +24,11 @@ public class ReadNCAA {
 				teamsAdded++;				
 				if(teamsAdded <= 16){
 					south.add(t);
-				}else if(TeamsAddded > 16 && teamsAdded <= 32){
-					north.add(t);
-				}else if(TeamsAdded > 32 && teamsAdded <= 48){
+				}else if(teamsAdded > 16 && teamsAdded <= 32){
+					east.add(t);
+				}else if(teamsAdded > 32 && teamsAdded <= 48){
 					west.add(t);
-				}else if(TeamsAdded > 48 && teamsAdded <= 64){
+				}else if(teamsAdded > 48 && teamsAdded <= 64){
 					midWest.add(t);
 				}
 
@@ -38,8 +38,8 @@ public class ReadNCAA {
 			for (String s : values) {
 				System.out.print(s + " ");
 			}
+			Bracket.probability(teams);
 
-			System.out.println();
 		}
 	}
 
