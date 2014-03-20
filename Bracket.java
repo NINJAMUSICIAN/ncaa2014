@@ -10,15 +10,8 @@ public class Bracket {
 	private Team b = new Team();
 	private Random r;
 
-	public Bracket(Team a, Team b) {
+	public Bracket() {
 		r = new Random();
-		ArrayList<Team> tw = new ArrayList<Team>();
-		double win = r.nextDouble();
-		if ((win * 100) > probability(tw)) {
-			return a;
-		} else {
-			return b;
-		}
 	}
 
 	public static double probability(ArrayList<Team> teams) {
@@ -39,5 +32,15 @@ public class Bracket {
 		}
 
 		return pab;
+	}
+
+	public Team play(Team a, Team b) {
+		ArrayList<Team> tw = new ArrayList<Team>();
+		double win = r.nextDouble();
+		if ((win * 100) > probability(tw)) {
+			return a;
+		} else {
+			return b;
+		}
 	}
 }
