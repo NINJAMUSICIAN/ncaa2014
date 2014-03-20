@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Bracket {
 
-	private Team a = new Team();
-	private Team b = new Team();
+	private static Team a = new Team();
+	private static Team b = new Team();
 
 	public static double probability() {
 		a = teams.next().name();
