@@ -6,8 +6,8 @@ import java.util.Random;
 public class Bracket {
 
 	private ArrayList<Team> teams = new ArrayList<Team>();
-	private Team a = new Team();
-	private Team b = new Team();
+	private Team a;
+	private Team b;
 	private Random r;
 
 	public Bracket() {
